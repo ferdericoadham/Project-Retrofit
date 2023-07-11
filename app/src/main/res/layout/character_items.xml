@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pp_profile"
+        android:layout_width="82dp"
+        android:layout_height="85dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/the_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/pp_profile"
+        android:text="Human" />
+
+    <TextView
+        android:id="@+id/the_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/the_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/the_description"
+        android:layout_toRightOf="@id/pp_profile"
+        android:text="Human" />
+
+    <TextView
+        android:id="@+id/the_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/the_name"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/pp_profile"
+        android:text="Species :" />
+
+    <TextView
+        android:id="@+id/live_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/the_description"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/pp_profile"
+        android:text="Alive" />
+
+</RelativeLayout>
